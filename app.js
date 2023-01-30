@@ -34,10 +34,7 @@ function runApp(args) {
         }
 
         // Read the input HJSON file
-        console.error(program.input)
         const input = fs.readFileSync(program.input, 'utf-8');
-
-        console.error(input);
 
         // Parse the input and generate the object
         const obj = hjson.parse(input);
